@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #f2f2f2;
+    flex-flow: row wrap;
+}
+
+.card-lead{
+    width: 360px;
+    height: 75vh;
+    background-color: #eef5db;
+    box-shadow: 20px 70px 50px 0px #b6b6b677;
+    margin: 7vh 2vw 7vh 2vw;
+    border: 1px solid #fe5f55;
+
+}
+
+.card-shown{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: column wrap;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.card-shown > h2, h3, p{
+    padding: 1.3em 2em 1.3em 2em;
+    color: #333745;
+}
+
+
+.card-shown > p::selection, h3::selection{
+    background-color: #fe5f55;
+    color: #c7efcf;
+    padding: 50px; 
+}
+
+.card-shown > h3{
+   
+    font-size: 1.4em;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+.card-shown > p{
+    letter-spacing: 1px;
+    line-height: 1.3em;
+    font-family: 'Open Sans', sans-serif;
+    padding-bottom: 2.7em;
+}
+
+.card-shown > h2 > i{
+    font-size: 2em;
+    color: #e63462;
+}
+
+
+.card-hidden{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+    width: 100%;
+    height: 0%;
+    font-size: 0;
+    position: relative;
+    top: -100%;
+    background-color: #fe5f55;
+    font-family: 'Noto Sans JP', sans-serif;
+    transition: 0.4s;
+}
+
+.card-hidden > h3, h4, span{
+    color: #eef5db;
+    cursor: default;
+}.close-btn{
+    position: absolute;
+    top: 15px;
+    right: 30px;
+    font-size: 2em;
+    cursor: pointer;
+}

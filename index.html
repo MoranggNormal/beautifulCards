@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Pallet Card</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/ce5c5dbd43.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+
+
+    <div class="card-lead">
+
+        <div class="card-shown"  onclick="show()">
+            <h2><i class="fas fa-desktop" role="ícone do Desktop"></i></h2>
+            <h3>Lorem Ipsum</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat aliquam modi ad doloremque, eos
+                pariatur dolor delectus soluta vitae tempore a! Eius incidunt placeat, vero maxime debitis fuga
+                doloribus fugit?</p>
+        </div>
+
+        <div class="card-hidden" >
+            <h3>Download For Windows</h3>
+            <span role="Download for windows"><i class="fas fa-download"></i></span>
+
+            <h3>Download For Mac</h3>
+            <span role="Download for mac"><i class="fas fa-download"></i></span>
+
+            <h3>Download For Linux</h3>
+            <span role="Download for linux"><i class="fas fa-download"></i></span>
+
+            <span class="close-btn" onclick="hide()"><i class="fas fa-times"></i></span>
+        </div>
+    </div>
+
+
+
+    <div class="card-lead">
+
+        <div class="card-shown"  onclick="show()">
+            <h2><i class="fas fa-desktop" role="ícone do Desktop"></i></h2>
+            <h3>Lorem Ipsum</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat aliquam modi ad doloremque, eos
+                pariatur dolor delectus soluta vitae tempore a! Eius incidunt placeat, vero maxime debitis fuga
+                doloribus fugit?</p>
+        </div>
+
+        <div class="card-hidden" >
+            <h3>Download For Windows</h3>
+            <span role="Download for windows"><i class="fas fa-download"></i></span>
+
+            <h3>Download For Mac</h3>
+            <span role="Download for mac"><i class="fas fa-download"></i></span>
+
+            <h3>Download For Linux</h3>
+            <span role="Download for linux"><i class="fas fa-download"></i></span>
+
+            <span class="close-btn" onclick="hide()"><i class="fas fa-times"></i></span>
+        </div>
+    </div>
+
+
+
+    <script>
+        const cardHover = document.querySelector('.card-shown');
+        const cardHidden = document.querySelector('.card-hidden');
+
+        const show = () => {
+            cardHidden.style.fontSize = '1em';
+            cardHidden.style.height = '100%';
+        };
+
+        const hide = () => {
+            cardHidden.style.fontSize = '0em';
+            cardHidden.style.height = '0%';
+        };
+    </script>
+
+</body>
+
+</html>
